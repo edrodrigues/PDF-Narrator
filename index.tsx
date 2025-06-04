@@ -85,6 +85,7 @@ const App: React.FC = () => {
                              setError(`Failed to parse PDF: ${pdfError.message}. Ensure it's a valid PDF file.`);
                              setFileContent(null);
                              setFileName(null);
+                             setSummary(null); // <--- ADD THIS LINE
                         } finally {
                             setIsLoadingFile(false);
                         }
@@ -94,6 +95,7 @@ const App: React.FC = () => {
                         setIsLoadingFile(false);
                         setFileName(null);
                         setFileContent(null);
+                        setSummary(null); // <--- ADD THIS LINE
                     };
                     reader.readAsArrayBuffer(file);
 
