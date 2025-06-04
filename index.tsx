@@ -95,7 +95,8 @@ const App: React.FC = () => {
                         setIsLoadingFile(false);
                         setFileName(null);
                         setFileContent(null);
-                        setSummary(null); // <--- ADD THIS LINE
+                        setSummary(null);
+                        setError(null); // Clear lingering error state
                     };
                     reader.readAsArrayBuffer(file);
 
