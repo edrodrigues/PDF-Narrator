@@ -1,0 +1,6 @@
+{
+  "description": "An application that analyzes uploaded PDF documents using AI to provide a summary, and then reads the summary aloud using text-to-speech.",
+  "prompt": "I want to create an app in which I upload a paper, the AI analyzes and summarizes it, then explain to me via audio.",
+  "requestFramePermissions": [],
+  "name": "PDF Analyzer and Narration App"
+}
